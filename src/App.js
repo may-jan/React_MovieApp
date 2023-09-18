@@ -14,8 +14,12 @@ function App() {
   }, []);
 
   useEffect(() => {
-    console.log(`Search For ${keyword}`);
+    console.log(`keyword 변경될 때마다 실행 ${keyword}`);
   }, [keyword]);
+
+  useEffect(() => {
+    console.log(`counter 변경될 때마다 실행 ${counter}`);
+  }, [counter]);
 
   return (
     <div className='App'>
