@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "//React_MovieApp/static/js/main.ad736f91.js",
-    "index.html": "//React_MovieApp/index.html",
-    "main.ad736f91.js.map": "//React_MovieApp/static/js/main.ad736f91.js.map"
+    "main.js": "/React_MovieApp/static/js/main.ad736f91.js",
+    "index.html": "/React_MovieApp/index.html",
+    "main.ad736f91.js.map": "/React_MovieApp/static/js/main.ad736f91.js.map"
   },
   "entrypoints": [
     "static/js/main.ad736f91.js"
