@@ -2,21 +2,20 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-const Movie = ({ id, coverImg, title, year, summary, genres }) => {
+const Movie = ({ id, coverImg, title, year, rating }) => {
   return (
-    <div>
-      <img alt='poster' src={coverImg} />
-      <h2>
-        <Link to={`/movie/${id}`}>
+    <div className='col' data-mdb-ripple-color='light'>
+      <Link to={`/movie/${id}`} className='text-white text-decoration-none'>
+        <div className='position-relative'>
+          <p className='h2 mx-auto mb-0 position-absolute top-50 start-50 translate-middle'>
+            {rating} / 10
+          </p>
+          <img alt='poster' src={coverImg} className='d-block mx-auto' />
+        </div>
+        <p className='h5 text-center'>
           {title} ({year})
-        </Link>
-      </h2>
-      <p>{summary}</p>
-      <ul>
-        {genres.map((g) => (
-          <li key={g}>{g}</li>
-        ))}
-      </ul>
+        </p>
+      </Link>
     </div>
   );
 };
@@ -26,8 +25,8 @@ Movie.propTypes = {
   coverImg: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   year: PropTypes.number.isRequired,
-  summary: PropTypes.string.isRequired,
-  genres: PropTypes.arrayOf(PropTypes.string).isRequired,
+  rating: PropTypes.number.isRequired,
+  // style: PropTypes.object,
 };
 
 export default Movie;

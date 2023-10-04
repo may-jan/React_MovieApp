@@ -14,8 +14,6 @@ const Detail = () => {
     setDetail((await json).data.movie);
   };
 
-  console.log(detail);
-
   useEffect(() => {
     getMovie();
   }, []);

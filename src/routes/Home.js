@@ -18,11 +18,13 @@ const Home = () => {
   console.log(movies);
 
   return (
-    <div>
+    <div className='container'>
       {loading ? (
-        <h1>Loading...</h1>
+        <h1 className='position-absolute top-50 start-50 translate-middle'>
+          Loading...
+        </h1>
       ) : (
-        <div>
+        <div className='row opacity-100'>
           {movies.map((movie) => (
             <Movie
               key={movie.id}
@@ -32,6 +34,8 @@ const Home = () => {
               summary={movie.summary}
               genres={movie.genres}
               year={movie.year}
+              rating={movie.rating}
+              className='col'
             />
           ))}
         </div>
