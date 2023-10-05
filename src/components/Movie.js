@@ -4,8 +4,11 @@ import { Link } from 'react-router-dom';
 
 const Movie = ({ id, coverImg, title, year, rating }) => {
   return (
-    <div className='col' data-mdb-ripple-color='light'>
-      <Link to={`/movie/${id}`} className='text-white text-decoration-none'>
+    <div className='col m-4 p-0'>
+      <Link
+        to={`${process.env.PUBLIC_URL}/movie/${id}`}
+        className='text-white text-decoration-none'
+      >
         <div className='position-relative'>
           <p className='h2 mx-auto mb-0 position-absolute top-50 start-50 translate-middle'>
             {rating} / 10
