@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import '../styles/Movie.css';
 
-const Movie = ({ id, coverImg, title, summary, year, rating }) => {
+const Movie = ({ id, coverImg, title, year, rating }) => {
   return (
     <div className='Movie col m-4 p-0'>
       <Link
@@ -26,7 +26,6 @@ const Movie = ({ id, coverImg, title, summary, year, rating }) => {
 
 Movie.propTypes = {
   id: PropTypes.number.isRequired,
-  summary: PropTypes.string.isRequired,
   coverImg: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   year: PropTypes.number.isRequired,

@@ -16,7 +16,6 @@ const Home = () => {
   useEffect(() => {
     getMovies();
   }, []);
-  console.log(movies);
 
   return (
     <div className='Home container'>
