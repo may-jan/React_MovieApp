@@ -1,0 +1,37 @@
+:root {
+  --change-color: rgb(245, 221, 37);
+}
+
+* {
+  transition: all 0.3s;
+  font-weight: bold !important;
+}
+
+.rating {
+  opacity: 0;
+}
+
+.rating_span {
+  color: var(--change-color);
+}
+
+a:hover .rating {
+  opacity: 1;
+}
+
+.poster {
+  opacity: 1;
+}
+
+a:hover .poster {
+  opacity: 0.2;
+}
+
+.movie_title {
+  font-size: 18px;
+  padding: 25px 20px;
+}
+
+a:hover .movie_title {
+  color: var(--change-color);
+}

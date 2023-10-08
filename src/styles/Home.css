@@ -1,0 +1,10 @@
+.loading {
+  font-size: 70px;
+  opacity: 0.5;
+}
+
+.title {
+  font-size: 70px;
+  letter-spacing: 4px;
+  color: rgb(245, 221, 37);
+}
