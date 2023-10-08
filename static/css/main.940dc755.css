@@ -1,0 +1,2 @@
+:root{--change-color:#f5dd25}*{font-weight:700!important;transition:all .3s}.rating{opacity:0}.rating_span{color:#f5dd25;color:var(--change-color)}.poster,a:hover .rating{opacity:1}a:hover .poster{opacity:.2}.movie_title{font-size:18px;padding:25px 20px}a:hover .movie_title{color:#f5dd25;color:var(--change-color)}.loading{font-size:70px;opacity:.5}.title{color:#f5dd25;font-size:70px;letter-spacing:4px}*{font-family:"Young Serif",serif}
+/*# sourceMappingURL=main.940dc755.css.map*/
